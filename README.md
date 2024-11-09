@@ -5,5 +5,5 @@ Hello! I'm Ipek and this is my personal website. It's still under construction- 
 Feel free to clone, and just open index.html :)
 Clone the repo
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/ipek-ozcan/personal-webapp.git
    ```
