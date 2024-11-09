@@ -1,0 +1,30 @@
+/* Home Section */
+/* home.css */
+
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5b4aa;
+}
+
+.home-container {
+    background-color: blue;
+    padding: 20px;
+    font-size: 1.7rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+h1 {
+    font-family: 'HappyFont', sans-serif;
+    letter-spacing: 2px;
+    margin-bottom: 20px; 
+}
+
+h2 {
+    font-family: 'HappyFont', sans-serif;
+    letter-spacing: 2px;
+    font-size: 1.4rem;
+}

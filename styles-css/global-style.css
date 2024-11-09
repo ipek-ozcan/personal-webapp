@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(43, 226, 86);
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #e1fb82; 
+    font-weight: normal;
+    
+}
+
+@font-face {
+    font-family: 'HappyFont';
+    src: url('../fonts/KgPayphone-n49J.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
