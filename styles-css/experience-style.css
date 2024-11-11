@@ -3,6 +3,37 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #3d3075;
+    /* background-color: #3d3075; */
+    gap: 5vh; 
+    /* flex-wrap: wrap; */
+}
+
+/* Image Styling */
+.experience-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.experience-photo-wrapper {
+    width: 50%;
+    max-width: 40vh; 
+    aspect-ratio: 10 / 3;
+    height: auto; 
+    overflow: hidden; 
+    border-radius: 1.5vh;
+}
+
+/* Stack all items vertically at a specific browser width (e.g., 900px) */
+@media (max-width: 750px) {
+    #experience {
+        flex-direction: column; /* Change to vertical stacking */
+        align-items: center; /* Center the stacked photo wrappers */
+    }
+
+    .experience-photo-wrapper {
+        width: 50%; /* Increase width for better visibility when stacked */
+        max-width: 100%; /* Ensure it doesn't exceed the viewport width */
+    }
 }
 

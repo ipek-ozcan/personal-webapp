@@ -3,11 +3,11 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #f5b4aa;
+    /* background-color: #f5b4aa; */
 }
 
 .home-container {
-    background-color: blue;
+    /* background-color: blue; */
     padding: 20px;
     font-size: 1.7rem;
     text-align: center;

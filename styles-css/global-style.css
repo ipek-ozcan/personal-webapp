@@ -2,13 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: rgb(43, 226, 86);
+    /* background-color: rgb(43, 226, 86); */
     scroll-behavior: smooth;
 }
 
 body {
-    background-color: #e1fb82; 
+    /* background-color: #e1fb82;  */
     font-weight: normal;
+    background-color: #f5b4aa;
     
 }
 
