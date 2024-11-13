@@ -1,21 +1,22 @@
 #about {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
     min-height: 100vh;
 }
 
-/* About Summary */
-.about-summary {
+/* About Section */
+.about-section {
     display: flex;
-    flex-direction: row; /* Default to side-by-side layout */
+    flex-direction: row;
     align-items: flex-start;
     gap: 3vh;
     padding: 3vh;
     width: 65%;
 }
 
-/* Paragraph Styling */
+/* About Paragraph Styling */
 .about-paragraph {
     display: flex;
     flex-direction: column;
@@ -28,13 +29,7 @@ p {
     margin-bottom: 2vh;
 }
 
-/* Image Styling */
-.about-photo {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
+/* About Photo Styling */
 .about-photo-wrapper {
     max-width: 30vh;
     aspect-ratio: 5 / 7;
@@ -43,19 +38,25 @@ p {
     border-radius: 1.5vh;
 }
 
-/* Make the content stack vertically on smaller screens */
-@media (max-width: 768px) {
-    .about-summary {
-        flex-direction: column; 
-        align-items: center;
-        text-align: center; 
-    }
+.about-profile-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
-    .about-photo-wrapper {
-        max-width: 50vw; 
-    }
+/* About Logos Styling */
+.about-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2vh;
+    margin-top: 4vh;
+    width: 80%;
+}
 
-    .about-paragraph {
-        width: 100%; 
-    }
+.about-logo-photo {
+    max-width: 8vh;
+    aspect-ratio: 1 / 1;
+    height: auto;
+    border-radius: 1vh;
 }
