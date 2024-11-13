@@ -1,29 +1,26 @@
 #about {
-    /* Allows side by side*/
     display: flex;
-    /* Aligns items in horizontally in the center*/
     justify-content: center;
-    /* Aligns items in vertically in the center*/
     align-items: center;
     min-height: 100vh;
-    /* background-color: #e7f5aa; */
 }
 
-
-
-/* Container Styling */
-.about-paragraph {
+/* About Summary */
+.about-summary {
     display: flex;
-    justify-content: space-between;
-    gap: 2vh; /* Space between paragraphs */
-    max-width: 80vw; /* Control the maximum width of the container */
-    margin: 0 auto; /* Center the container */
+    flex-direction: row; /* Default to side-by-side layout */
+    align-items: flex-start;
+    gap: 3vh;
+    padding: 3vh;
+    width: 80%;
 }
 
 /* Paragraph Styling */
+.about-paragraph {
+    flex: 1;
+}
+
 p {
-    flex: 0 1 30%; /* Fixed width: Takes up 30% of the container */
-    max-width: 30%; /* Ensures all paragraphs have the same width */
     font-size: 1.1rem;
     color: #555;
     line-height: 1.6;
@@ -33,24 +30,30 @@ p {
 .about-photo {
     width: 100%;
     height: 100%;
-    object-fit: cover; 
-}
-
-.about-summary {
-    /* allows photo and text to be side by side */
-    display: flex;
-    /* controls the height of the photo */
-    align-items: flex-start; 
-    gap: 3vh; 
-    padding: 3vh;
-    width: 80%;
+    object-fit: cover;
 }
 
 .about-photo-wrapper {
-    max-width: 30vh; 
+    max-width: 30vh;
     aspect-ratio: 5 / 7;
-    height: auto; 
-    overflow: hidden; 
+    height: auto;
+    overflow: hidden;
     border-radius: 1.5vh;
 }
 
+/* Make the content stack vertically on smaller screens */
+@media (max-width: 768px) {
+    .about-summary {
+        flex-direction: column; /* Stack the photo and text vertically */
+        align-items: center;
+        text-align: center; /* Center-align text for better readability */
+    }
+
+    .about-photo-wrapper {
+        max-width: 50vw; /* Increase photo size for better visibility */
+    }
+
+    .about-paragraph {
+        width: 100%; /* Ensure paragraphs take full width */
+    }
+}
