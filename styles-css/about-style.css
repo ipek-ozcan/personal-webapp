@@ -16,10 +16,11 @@
     width: 65%;
 }
 
-/* About Paragraph Styling */
+/* Paragraph Styling */
 .about-paragraph {
     display: flex;
     flex-direction: column;
+    flex: 1;
 }
 
 p {
@@ -29,7 +30,7 @@ p {
     margin-bottom: 2vh;
 }
 
-/* About Photo Styling */
+/* Profile Photo Styling */
 .about-photo-wrapper {
     max-width: 30vh;
     aspect-ratio: 5 / 7;
@@ -59,4 +60,21 @@ p {
     aspect-ratio: 1 / 1;
     height: auto;
     border-radius: 1vh;
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .about-photo-wrapper {
+        order: -1; 
+        max-width: 40vw; 
+    }
+
+    .about-paragraph {
+        width: 90%;
+    }
 }
