@@ -23,7 +23,7 @@
 
 p {
     font-size: 1.1rem;
-    color: #555;
+    color: #414141;
     line-height: 1.6;
     margin-bottom: 2vh;
 }
@@ -46,16 +46,16 @@ p {
 /* Make the content stack vertically on smaller screens */
 @media (max-width: 768px) {
     .about-summary {
-        flex-direction: column; /* Stack the photo and text vertically */
+        flex-direction: column; 
         align-items: center;
-        text-align: center; /* Center-align text for better readability */
+        text-align: center; 
     }
 
     .about-photo-wrapper {
-        max-width: 50vw; /* Increase photo size for better visibility */
+        max-width: 50vw; 
     }
 
     .about-paragraph {
-        width: 100%; /* Ensure paragraphs take full width */
+        width: 100%; 
     }
 }
